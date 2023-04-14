@@ -17,7 +17,7 @@ public class OpenAppTest {
         cap.setCapability("platformVersion","9");
         cap.setCapability("appPackage","com.saucelabs.mydemoapp.rn");
         cap.setCapability("appActivity","com.saucelabs.mydemoapp.rn.MainActivity");
-       URL url = new URL("http://127.0.0.1:6000/wd/hub");
+       URL url = new URL("http://127.0.0.1:6000/wd/hub");   //server running at port 6000
        driver = new AppiumDriver(url,cap);
     }
 }
